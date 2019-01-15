@@ -3,7 +3,6 @@ var score = 0;
 var scoreText = document.querySelector('.score');
 var lastThroneHit = null;
 var playButton = document.querySelector('.play');
-var ENTER_KEY = 13;
 var joffreys = document.querySelectorAll('.joffrey');
 
 // Starts the game.
