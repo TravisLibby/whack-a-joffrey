@@ -1,0 +1,130 @@
+body {
+  background-color: #000;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 10px 0;
+  text-align: center;
+}
+
+h1,
+.score,
+.scoreText {
+  color: #fff;
+  font-weight: bold;
+}
+
+.scoreText {
+  text-align: center;
+}
+
+.game-controls {
+  width: 192px;
+  margin: 0 auto 10px auto;
+}
+
+button {
+  padding: 10px;
+  margin-right: 10px;
+  color: crimson;
+  font-weight: bold;
+}
+
+.throne-container {
+  width: 200px;
+  height: 180px;
+  position: relative;
+  float: left;
+  overflow: hidden;
+}
+
+.joffrey-throne {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.iron-throne {
+  background: url('./images/iron-throne-200x160.png') no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.joffrey-throne,
+.iron-throne {
+  width: 200px;
+  height: 100px;
+}
+
+.iron-throne:after {
+  content: '';
+  width: 200px;
+  height: 60px;
+  background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+  position: absolute;
+  bottom: 0;
+  z-index: 30;
+}
+
+.joffrey {
+  width: 180px;
+  height: 270px;
+  background: url('./images/joffrey-180x270.png') no-repeat;
+  position: absolute;
+  bottom: -190px;
+  left: 10px;
+  transition: bottom 0.5s ease;
+  cursor: pointer;
+}
+
+.up {
+  bottom: -70px;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .throne-container {
+    width: 100px;
+    height: 90px;
+    margin-bottom: 40px;
+  }
+
+  .iron-throne {
+    background: url('./images/iron-throne-100x80.png') no-repeat;
+  }
+  
+  .joffrey-throne,
+  .iron-throne {
+    width: 100px;
+    height: 50px;
+  }
+
+  .iron-throne:after {
+    width: 100px;
+    height: 30px;
+  }
+
+  .joffrey {
+    width: 180px;
+    height: 270px;
+    bottom: -280px;
+    background: url('./images/joffrey-90x135.png') no-repeat;
+  }
+
+  .up {
+    bottom: -170px;
+  }
+}
