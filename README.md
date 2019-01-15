@@ -5,3 +5,4 @@ This is a basic implementation of the classic "whack-a-mole" game with replaced 
 **Usage**
 
 Clone the repo and open the <code>index.html</code> file in your favorite browser.
+
